@@ -1,0 +1,101 @@
+/* Body reset for clean layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: #6b1919;
+    background-image: linear-gradient(to right bottom, #f5ee19d7, #c72121);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Content area adjustment */
+.content {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each section takes full screen, with reduced padding for content */
+.dumbbell, .hammer, .preacher-hammer, .triceps, .legs {
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px; /* Reduce padding here */
+}
+
+/* Background images for each section */
+.dumbbell {
+    background-image: url('https://squatwolf.com/cdn/shop/articles/pc.jpg?v=1719994740');
+}
+
+.hammer {
+    background-image: url('https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2015/10/cable-crossover-content-chest-pec.jpg?w=1300&h=731&crop=1&quality=86&strip=all');
+}
+
+.preacher-hammer {
+    background-image: url('https://img.freepik.com/premium-photo/man-shows-strong-back-muscles_116547-41.jpg');
+}
+
+.triceps {
+    background-image: url('https://luna-askmen-images.askmen.com/top_10/fitness/top-10-tricep-exercises/askmen-lead-image-template-1-1694809295.png');
+}
+
+.legs {
+    background-image: url('https://steelsupplements.com/cdn/shop/articles/shutterstock_1689858364_1000x.jpg?v=1663098939');
+}
+
+/* Smaller padding for section content (such as text) */
+.content h3 {
+    font-size: 3rem;
+    color: white; /* Adjust color */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add shadow for text visibility */
+    margin: 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial {
+    margin-top: 10px;
+    font-style: italic;
+}
